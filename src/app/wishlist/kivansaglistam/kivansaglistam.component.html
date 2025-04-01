@@ -1,0 +1,20 @@
+<div class="kivansag-lista">
+    <h2>Kívánságlistám</h2>
+  
+    <div class="hozzaad-form">
+      <input type="text" [(ngModel)]="ujTermekNev" placeholder="Új termék neve" />
+      <input type="text" [(ngModel)]="ujTermekKep" placeholder="Termék kép URL" />
+      <button (click)="hozzaadTermek()">Hozzáadás</button>
+    </div>
+  
+    <ul>
+      <li *ngFor="let termek of termekek; let i = index" class="termek-item">
+        <img [src]="termek.image" alt="{{ termek.nev }}" class="termek-kep"/>
+        <div class="termek-info">
+          <span class="termek-nev">{{ termek.nev }}</span>
+          <button (click)="torolTermek(i)" class="torles-gomb">Törlés</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  

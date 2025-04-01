@@ -1,0 +1,32 @@
+<div class="rendezes-gombok">
+  <button (click)="sortProducts('low-to-high')">
+    <i class="bi bi-arrow-down"></i> Legolcsóbbak
+  </button>
+  
+  <button (click)="sortProducts('high-to-low')">
+    <i class="bi bi-arrow-up"></i> Legdrágábbak
+  </button>
+</div>
+
+<div class="bazooka-lista">
+  <div *ngFor="let bazooka of bazooka; let i = index" class="bazooka-item">
+    <div class="bazooka-card">
+      <h3>{{ bazooka.nev }}</h3>
+      <img [src]="bazooka.image" [alt]="bazooka.nev" class="bazooka-kep">
+      <p class="leiras"> {{ bazooka.leiras }} </p>
+      <p class="ar">Ár: {{ bazooka.ar }} Ft</p>
+      <div class="mennyiseg">
+        Mennyiség: <input type="number" [(ngModel)]="bazooka.darab" min="1">
+      </div>
+      <button class="kosar-gomb" (click)="kosarbaRak(i)">
+        Kosárba rakom
+      </button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showNotification" class="notification">
+  A termék kosárba rakva!
+</div>
+
+<button class="scroll-to-top" (click)="scrollToTop()">↑</button>

@@ -1,0 +1,105 @@
+html, body {
+  height: 100%;  /* Ensures full height for both html and body */
+  margin: 0;  /* Removes default margin */
+  padding: 0;  /* Removes default padding */
+  overflow: hidden;  /* Disables scrolling */
+  background-color: #ffffff;  /* White background for the entire page */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Aligns content to the top */
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Aligns content to the top */
+  width: 100%;
+  margin-top: 7px;  /* Adds space at the top */
+}
+
+.profile-card {
+  background: #fdf9f9;  /* Light grey background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;  /* Increased width */
+  margin-top: 40px;  /* Moves the box upwards */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;  /* Smooth transition */
+}
+
+.profile-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Darker shadow on hover */
+  transform: translateY(-5px);  /* Slightly lifts the card */
+}
+
+
+.profile-img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 7px 0;
+}
+
+.profile-email {
+  color: #666;
+  font-size: 0.9rem;  /* Smaller font size for the email */
+  margin-bottom: 30px;  /* Adds more space below the email */
+}
+
+h2 {
+  font-size: 1.1rem !important;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+button {
+  background-color: #030608;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 0.8rem !important;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: block;
+  margin: 30px auto;  /* Adds more space between the email and buttons */
+}
+
+button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+}
+
+button:active {
+  background-color: #003f7f;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+  }
+}

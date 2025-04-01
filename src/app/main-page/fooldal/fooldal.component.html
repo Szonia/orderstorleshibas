@@ -1,0 +1,13 @@
+
+     <div class="product-container">
+      <div class="product" *ngFor="let product of products">
+        <a (click)="redirectToUrl(product.link)">
+          <div class="image-container">
+            <img [src]="'assets/productsImg/' + product.image" [alt]="product.name" class="product-image" />
+          </div>
+          <p class="product-name">{{ product.name }}</p>
+        </a>
+      </div>
+    </div>
+    
+    <button class="scroll-to-top" (click)="scrollToTop()">↑</button>

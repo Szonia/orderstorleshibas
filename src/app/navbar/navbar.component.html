@@ -1,0 +1,85 @@
+
+<!-- user:{{user}} -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" [routerLink]="['/']">
+            <img src="assets/logo.png" alt="Noel Candy Shop" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Termékek
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" [routerLink]="['/gumicukrok']">Gumicukrok</a>
+                            <ul class="dropdown-menu">
+                                <!-- <li><a class="dropdown-item" (click)="setSearch('sweet_gummies')" >Édes</a></li> -->
+                                <li><a class="dropdown-item"[routerLink]="['/edes-gumicukrok']" >Édes</a></li>
+                                <!-- <li><a class="dropdown-item" (click)="setSearch('sour_gummies')" >Savanyú</a></li> -->
+                                <li><a class="dropdown-item" [routerLink]="['/savanyu-gumicukrok']" >Savanyú</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" [routerLink]="['/chipsek']">Chipsek</a>
+                            <ul class="dropdown-menu">
+                                <!-- <li><a class="dropdown-item" (click)="setSearch('salty_chips')" >Sós</a></li> -->
+                                <li><a class="dropdown-item"[routerLink]="['/sos-chipsek']" >Sós</a></li>
+                                <!-- <li><a class="dropdown-item" (click)="setSearch('spicy_chips')" >Csípős</a></li> -->
+                                <li><a class="dropdown-item"[routerLink]="['/csipos-chipsek']" >Csipős</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" [routerLink]="['/uditok']">Üdítők</a>
+                            <ul class="dropdown-menu">
+                                <!-- <li><a class="dropdown-item" (click)="setSearch('sweet_drinks')" >Édes</a></li> -->
+                                <li><a class="dropdown-item"[routerLink]="['/edes-uditok']" >Édes</a></li>
+                                <!-- <li><a class="dropdown-item" (click)="setSearch('sour_drinks')" >Savanyú</a></li> -->
+                                <li><a class="dropdown-item"[routerLink]="['/savanyu-uditok']" >Savanyú</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="['/fiokom']">
+                        Fiókom
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" [routerLink]="['/registration']">Regisztráció</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/login']">Belépés</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" [routerLink]="['/kivansaglistam']">Kívánságlistám</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" [routerLink]="['/kapcsolat']">Kapcsolat</a>
+                </li>
+
+                <li *ngIf="user" class="nav-item">
+                    <a class="nav-link text-white" (click)="signOut()" [routerLink]="['/login']">Kilépés</a>
+                </li>
+            </ul>
+
+            
+            <form class="d-flex align-items-center" id="searchForm">
+                <input class="form-control me-2" type="search"  placeholder="Keresés" aria-label="Search" id="searchInput" #searchInput
+                       [(ngModel)]="searchQuery" (keyup.enter)="setSearch(searchInput.value)">
+              </form>
+              
+            <a class="navbar-brand" [routerLink]="['/kosar']">
+                <i class="bi bi-cart ms-3 text-white cart my-0 py-0" (click)="addOrder()"></i>
+            </a>
+        </div>
+    </div>
+</nav>

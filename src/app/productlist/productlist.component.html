@@ -1,0 +1,34 @@
+<!-- {{products|json}} -->
+<div class="row">
+  <div *ngFor="let column of columns" class="col my-2 fw-bold">{{column}}</div>
+  <div class="col"></div>
+  <div class="col"></div>
+</div>
+
+<div  class="row my-1"> 
+  <div *ngFor="let column of columns" class="col">
+    <input type="text" class="form-control" [(ngModel)]="newProduct[column]">
+  </div>
+  <div class="col">
+    <button (click)="addProduct()" type="button" class="btn btn-primary">Add</button>
+  </div>
+  <div class="col"> </div> 
+</div>
+
+ <!-- <div *ngFor="let product of products" class="row my-1"> -->
+  <div *ngFor="let product of products|search:searchText" class="row my-1"> 
+  <div *ngFor="let column of columns" class="col">
+    <!-- {{product|json}} -->
+    <!-- {{column}}
+    {{product[column]}} -->
+    <input type="text" class="form-control" [(ngModel)]="product[column]">
+
+
+  </div>
+  <div class="col">
+    <button (click)="editProduct(product)" type="button" class="btn btn-primary">Edit</button>
+  </div>
+  <div class="col">
+    <button (click)="deleteProduct(product)" type="button" class="btn btn-primary">Delete</button>
+  </div>
+</div>

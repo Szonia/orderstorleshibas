@@ -1,0 +1,132 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 50px; /* Több térköz a doboz körül */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+  margin: 20px auto; 
+  background: #f9f9f9;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 30px; /* Több térköz a cím és a többi szakasz között */
+  letter-spacing: 1px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Több térköz a kapcsolati információk között */
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.info-item i {
+  font-size: 1.8em;
+  color: #0c110c;
+}
+
+.info-item p {
+  font-size: 1.1em;
+  margin: 0;
+  color: #555;
+}
+
+.google-maps {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-decoration: none; 
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding: 10px 20px; /* Kényelmesebb padding */
+  box-sizing: border-box;
+  width: auto; 
+  max-width: 100%; 
+  margin: 10px auto; /* Több térköz a térkép link és a többi között */
+  color: #555;
+  font-size: 1.2em;
+}
+
+.google-maps:hover {
+  color: #0f0b0b;
+  background-color: #e1f5e2;
+  transform: translateY(-3px);
+}
+
+.social-media p {
+  font-size: 1.5em; /* Nagyobb betűméret */
+  margin-bottom: 50px; /* Több térköz a közösségi média szövege és a linkek között */
+  font-weight: 500;
+  color: #333;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Kisebb távolság a közösségi ikonok között */
+  margin-bottom: 50px; /* Több térköz alul */
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  color: #555;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding: 12px 24px; /* Kényelmesebb térköz a gombokon */
+  justify-content: center;
+  box-sizing: border-box;
+ /* Semleges háttérszín */
+}
+
+.social-icon:hover {
+  color: #0f0b0b;
+  background-color: #e1f5e2;
+  transform: translateY(-3px);
+}
+
+.social-image {
+  width: 35px; /* Kép szélessége */
+  height: 35px; /* Kép magassága */
+  margin-right: 15px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover .social-image {
+  transform: scale(1.1); /* Kép nagyítása hover effektusnál */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

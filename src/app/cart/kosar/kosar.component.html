@@ -1,0 +1,50 @@
+<h2>Kosár</h2>
+
+<div class="cart-container" *ngIf="cartItems && cartItems.length; else emptyCart">
+  <div class="checkout-container">
+    <button (click)="goCheckOut()" class="checkout-btn">Pénztárhoz</button>
+  </div>
+  
+  <div *ngFor="let item of cartItems">
+    <div class="cart-item">
+      <p>{{ item.name }}</p>
+      <p>Mennyiség: {{ item.mennyiseg }}</p>
+      <p>Egységár: {{ item.price }} Ft</p>
+      <p>Összesen: {{ item.mennyiseg * item.price }} Ft</p>
+      <button (click)="removeFromCart(item.key)">Eltávolítás</button>
+    </div>
+  </div>
+
+  <h3>Végösszeg: {{ totalPrice }} Ft</h3>
+</div>
+
+<ng-template #emptyCart>
+  <p>A kosarad üres.</p>
+</ng-template>
+
+
+
+
+<!-- <h2>Kosár</h2>
+
+<div *ngIf="cartItems && cartItems.length; else emptyCart">
+  <div *ngFor="let item of cartItems">
+    <div class="cart-item">
+      <p>{{ item.name }}</p>
+      <p>Mennyiség: {{ item.quantity }}</p>
+      <p>Egységár: {{ item.price }} Ft</p>
+      <p>Összesen: {{ item.quantity * item.price }} Ft</p>
+      <button (click)="removeFromCart(item.id)">Eltávolítás</button>
+    </div>
+  </div>
+
+  <h3>Végösszeg: {{ totalPrice }} Ft</h3>
+  
+
+  <button class="checkout-btn" [routerLink]="'/checkout'">Pénztárhoz</button>
+</div>
+
+
+<ng-template #emptyCart>
+  <p>A kosarad üres.</p>
+</ng-template> -->

@@ -1,0 +1,161 @@
+.savanyu-uditok-lista {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: space-between;
+}
+
+.savanyu-uditok-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 30%;
+}
+
+.savanyu-uditok-card {
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.savanyu-uditok-card:hover {
+  transform: scale(1.05);
+}
+
+.savanyu-uditok-kep {
+  width: 100%;
+  height: 150px; 
+  object-fit: contain; 
+  border-radius: 5px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+  flex-grow: 1; 
+}
+
+.mennyiseg {
+  margin-top: 10px;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  margin-left: 10px;
+  text-align: center;
+}
+  
+.kosar-gomb {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 150px; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+  text-align: center;
+}
+
+.kosar-gomb:hover {
+  background-color: #45a049;
+}
+  
+  .notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .rendezes-gombok {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+  }
+  
+  
+  .rendezes-gombok button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .rendezes-gombok button:hover {
+    background-color: #555;
+    transform: scale(1.04);
+  }
+  
+  .rendezes-gombok button:active {
+    transform: scale(0.95);
+  }
+
+ 
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;  
+    right: 20px;   
+    width: 50px;   
+    height: 50px;  
+    border-radius: 50%; 
+    background-color: #000;
+    color: white;
+    font-size: 24px;  
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #555;
+  }
+  
+  .scroll-to-top:focus {
+    outline: none;
+  }
+  
+  

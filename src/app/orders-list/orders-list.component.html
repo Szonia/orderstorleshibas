@@ -1,0 +1,172 @@
+<!-- Display orders in JSON format (for debugging purposes) -->
+<!-- {{ orders | json }} -->
+
+<div *ngIf="orders && orders.length">
+  <div *ngFor="let order of orders; let i = index" class="order-container">
+    <h3>Rendelés {{ i + 1 }}</h3>
+
+    <div class="field">
+      <label>Teljes név:</label>
+      <input [value]="order.firstName + ' ' + order.lastName" readonly />
+    </div>
+    
+    <div class="field">
+      <label>Email:</label>
+      <input [(ngModel)]="order.email" readonly />
+    </div>
+
+    <div class="field">
+      <label>Megrendelt termékek:</label>
+      <ul>
+        <li *ngFor="let item of order.items">
+          {{ item.name }} ({{ item.mennyiseg }} x {{ item.price }} HUF)
+        </li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <label>Fizetendő összeg:</label>
+      <input [value]="order.totalPrice + ' HUF'" readonly />
+    </div>
+
+    <div class="field">
+      <label>Státusz:</label>
+      <select [(ngModel)]="order.status" (change)="updateOrderStatus(i, order.status)">
+        <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Telefonszám:</label>
+      <input [(ngModel)]="order.phoneNumber" readonly />
+    </div>
+
+    <div class="actions">
+      <button (click)="deleteOrder(i)">🗑️ Rendelés törlése</button>
+    </div>
+
+    <!-- Display error message if there is a delete failure -->
+    <div *ngIf="order.errorMessage" class="error-message">
+      <p>{{ order.errorMessage }}</p>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!orders || orders.length === 0">
+  <p>Nincsenek rendelések.</p>
+</div>
+
+
+
+
+
+
+
+
+<!-- {{orders | json}}
+
+<div *ngIf="orders && orders.length">
+  <div *ngFor="let order of orders; let i = index" class="order-container">
+    <h3>Rendelés {{ i + 1 }}</h3>
+
+    <div class="field">
+      <label>Teljes név:</label>
+      <input [value]="order.firstName + ' ' + order.lastName" readonly />
+    </div>
+    
+    <div class="field">
+      <label>Email:</label>
+      <input [(ngModel)]="order.email" readonly />
+    </div>
+
+    <div class="field">
+      <label>Megrendelt termékek:</label>
+      <ul>
+        <li *ngFor="let item of order.items">
+          {{ item.name }} ({{ item.mennyiseg }} x {{ item.price }} HUF)
+        </li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <label>Fizetendő összeg:</label>
+      <input [value]="order.totalPrice + ' HUF'" readonly />
+    </div>
+
+    <div class="field">
+      <label>Státusz:</label>
+      <select [(ngModel)]="order.status" (change)="updateOrderStatus(i, order.status)">
+        <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Telefonszám:</label>
+      <input [(ngModel)]="order.phoneNumber" readonly />
+    </div>
+
+    <div class="actions">
+      <button (click)="deleteOrder(i)">🗑️ Rendelés törlése</button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!orders || orders.length === 0">
+  <p>Nincsenek rendelések.</p>
+</div> -->
+
+
+
+
+
+
+ <!-- {{orders | json}} 
+// <div *ngIf="orders && orders.length">
+//   <div *ngFor="let order of orders; let i = index" class="order-container">
+//     <h3>Rendelés {{ i + 1 }}</h3>
+
+//     <div class="field">
+//       <label>Teljes név:</label>
+//       <input [value]="order.firstName + ' ' + order.lastName" readonly />
+//     </div>
+    
+//     <div class="field">
+//       <label>Email:</label>
+//       <input [(ngModel)]="order.email" readonly />
+//     </div>
+
+//     <div class="field">
+//       <label>Megrendelt termékek:</label>
+//       <ul>
+//         <li *ngFor="let item of order.items">
+//           {{ item.name }} ({{ item.mennyiseg }} x {{ item.price }} HUF)
+//         </li>
+//       </ul>
+//     </div>
+
+//     <div class="field">
+//       <label>Fizetendő összeg:</label>
+//       <input [value]="order.totalPrice + ' HUF'" readonly />
+//     </div>
+
+//     <div class="field">
+//       <label>Státusz:</label>
+//       <select [(ngModel)]="order.status" (change)="updateOrderStatus(i, order.status)">
+//         <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
+//       </select>
+//     </div>
+
+//     <div class="field">
+//       <label>Telefonszám:</label>
+//       <input [(ngModel)]="order.phoneNumber" readonly />
+//     </div>
+
+//     <div class="actions">
+//       <button (click)="deleteOrder(i)">🗑️ Rendelés törlése</button>
+//     </div>
+//   </div>
+// </div>
+
+// <div *ngIf="!orders || orders.length === 0">
+//   <p>Nincsenek rendelések.</p>
+// </div> -->

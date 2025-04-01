@@ -1,0 +1,28 @@
+ .cart{
+    font-size: 2rem;
+
+}
+
+.dropdown-submenu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 9999;
+  }
+  
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+
+}
+
+
+  .navbar-logo {
+    width: 100px !important; 
+    height: auto !important; 
+    max-height: 100px !important; 
+    object-fit: contain !important; 
+}
+
+
+

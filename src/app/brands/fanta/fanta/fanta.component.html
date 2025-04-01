@@ -1,0 +1,32 @@
+<div class="rendezes-gombok">
+  <button (click)="sortProducts('low-to-high')">
+    <i class="bi bi-arrow-down"></i> Legolcsóbbak
+  </button>
+  
+  <button (click)="sortProducts('high-to-low')">
+    <i class="bi bi-arrow-up"></i> Legdrágábbak
+  </button>
+</div>
+
+<div class="fanta-lista">
+  <div *ngFor="let fanta of fanta; let i = index" class="fanta-item">
+    <div class="fanta-card">
+      <h3>{{ fanta.nev }}</h3>
+      <img [src]="fanta.image" [alt]="fanta.nev" class="fanta-kep">
+      <p class="leiras"> {{ fanta.leiras }} </p>
+      <p class="ar">Ár: {{ fanta.ar }} Ft</p>
+      <div class="mennyiseg">
+        Mennyiség: <input type="number" [(ngModel)]="fanta.darab" min="1">
+      </div>
+      <button class="kosar-gomb" (click)="kosarbaRak(i)">
+        Kosárba rakom
+      </button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showNotification" class="notification">
+  A termék kosárba rakva!
+</div>
+
+<button class="scroll-to-top" (click)="scrollToTop()">↑</button>

@@ -1,0 +1,417 @@
+{
+  "termekek": [
+    {
+      "Category": "sweet_drinks",
+      "Name": "Fanta Lime 500ml",
+      "Description": "A Fanta Lime egy frissítően citrusos, élénk lime ízű szénsavas üdítőital, amely tökéletes egyensúlyt teremt az édes és savanykás ízek között.",
+      "Price": 1280.00,
+      "StockQuantity": "18,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Fanta Green Apple 185ml",
+      "Description": "A Fanta Green Apple egy élénk és frissítő zöldalma ízű szénsavas ital, amely édes és enyhén savanykás ízvilágával igazi üdítő élményt nyújt.",
+      "Price": 1290.00,
+      "StockQuantity": "23,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Chinese Fanta White Peach 330ml",
+      "Description": "A Chinese Fanta White Peach egy üdítően édes és zamatos fehér őszibarack ízű szénsavas ital, amely frissítően gyümölcsös élményt nyújt.",
+      "Price": 790.00,
+      "StockQuantity": "34,00"
+    },
+    {
+      "Category": "sour_gummies",
+      "Name": "Skittles Crazy Sours 38g",
+      "Description": "A Skittles Crazy Sours egy élénk és savanyú gyümölcsízű cukorkaválogatás, amely intenzív és frissítő ízélményt nyújt minden falatban.",
+      "Price": 299.00,
+      "StockQuantity": "45,00"
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Skittles Fruits 38g",
+      "Description": "A Skittles Fruits egy élénk és gyümölcsös cukorkaválogatás, amely öt különböző ízzel biztosít vidám és édes rágási élményt.",
+      "Price": 360.00,
+      "StockQuantity": "21,00"
+    },
+    {
+      "Category": "sour_gummies",
+      "Name": "Skittles Crazy Sours 136g",
+      "Description": "A Skittles Crazy Sours egy nagyobb kiszerelésű, savanyú gyümölcsízű cukorkaválogatás, amely intenzív és frissítő ízekkel garantálja a hosszan tartó élvezetet.",
+      "Price": 980.00,
+      "StockQuantity": "11.00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Skittles Tropical Liquid Water Enhancer 48ml",
+      "Description": "A Skittles Tropical Liquid Water Enhancer egy trópusi gyümölcsízű, folyékony italízesítő, amely néhány cseppel feldobja a vizet, édes és gyümölcsös frissességet biztosítva.",
+      "Price": 4510.00,
+      "StockQuantity": "10,00"
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Skittles dóza 195g",
+      "Description": "A Skittles dóza egy nagy kiszerelésű, színes és gyümölcsös cukorkaválogatás, amely vidám és édes ízélményt nyújt minden falatban.",
+      "Price": 3868.00,
+      "StockQuantity": "10,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Skittles Tropical Punch flavored drink powder, 6-pack.",
+      "Description": "A Skittles Tropical Punch trópusi puncs ízű italpor egy egzotikus gyümölcsök édes és frissítő ízét hozza el, könnyen elkészíthető, ízesített üdítő formájában.",
+      "Price": 1416.00,
+      "StockQuantity": "20,00"
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Skittles Fruity Tea 40g",
+      "Description": "A Skittles Fruity Tea egy gyümölcsös ízű tea, amely a Skittles édességeinek frissítő, édes és aromás változatát kínálja forró ital formájában.",
+      "Price": 990.00,
+      "StockQuantity": "15,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Skittles Wild Berry Water Enhancer 48ml",
+      "Description": "A Skittles Wild Berry Water Enhancer egy bogyós gyümölcsök ízvilágát hozó, folyékony italízesítő, amely néhány cseppel frissítő, édes és gyümölcsös élményt ad a vízhez.",
+      "Price": 2573.00,
+      "StockQuantity": "13,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Arizona Cherry Lime Rickey 650ml",
+      "Description": "Az Arizona Cherry Lime Rickey egy frissítő, enyhén savanykás cseresznye és lime ízű üdítőital, amely tökéletesen kiegyensúlyozza az édes és citrusos ízeket egy élénk és ínycsiklandó italban.",
+      "Price": 990.00,
+      "StockQuantity": "30,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Arizona Frost Chillzicle 650ml",
+      "Description": "Az Arizona Frost Chillzicle egy hűsítő és frissítő üdítő, amely az élénk gyümölcsízeket és a jeges frissességet ötvözi, tökéletes választás a forró napokra.",
+      "Price": 990.00,
+      "StockQuantity": "20,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Ghost Hydration Drink Orange Squeeze 500ml",
+      "Description": "Frissítő, lédús narancsos íz enyhe savanykás utóízzel.",
+      "Price": 7411.00,
+      "StockQuantity": "11,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Ghost Hydration Drink Kiwi Strawberry 500ml",
+      "Description": "Intenzív, édes-savanykás eper íz autentikus kivi aromával kiegészítve.",
+      "Price": 7411.00,
+      "StockQuantity": "16,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Ghost Hydration Drink Lemon Lime 500ml",
+      "Description": "Kiegyensúlyozott, üdítő citrom-lime ízkombináció kellemes savanyú beütéssel.",
+      "Price": 7411.00,
+      "StockQuantity": "14,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Ghost Hydration Drink Blue Raspberry 500ml",
+      "Description": "Édes-savanyú kék málna íz, amely a népszerű cukorkát idézi.",
+      "Price": 7411.00,
+      "StockQuantity": "15,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Ghost Hydration Drink Lemon Crush 500ml",
+      "Description": "Intenzív citromos íz narancs aromával kiegészítve, frissítő citrusos élményt nyújtva.",
+      "Price": 7411.00,
+      "StockQuantity": "13,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Ghost Hydration Drink Tropical Mango 500ml",
+      "Description": "Édeskés mangó íz enyhe ananász és narancs aromával, trópusi hangulatot idézve.",
+      "Price": 7411.00,
+      "StockQuantity": "5,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Ghost Hydration Drink Cherry Limeade 500ml",
+      "Description": "Erőteljes cseresznye íz frissítő lime utóízzel, tökéletes egyensúlyban.",
+      "Price": 7411.00,
+      "StockQuantity": "13,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Ghost Hydration Drink Citrus 500ml",
+      "Description": "Frissítő, kiegyensúlyozott citrusfélék keveréke, amely több citrusgyümölcs ízét ötvözi.",
+      "Price": 7411.00,
+      "StockQuantity": "9,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Ghost Hydration Drink Orange Cream 500ml",
+      "Description": "Krémes, édes narancsos íz vaníliás beütéssel, amely a klasszikus narancskrémes fagylaltra emlékeztet.",
+      "Price": 7411.00,
+      "StockQuantity": "11,00"
+    },
+    {
+      "Category": "sour_drinks",
+      "Name": "Ghost Hydration Drink Sour Pink Lemonade 500ml",
+      "Description": "Savanykás rózsaszín limonádé íz, frissítő citrusos aromával.",
+      "Price": 7411.00,
+      "StockQuantity": "13,00"
+    },
+    {
+      "Category": "sweet_drinks",
+      "Name": "Ghost Energy Drink, Warheads Sour Watermelon 500ml",
+      "Description": "Intenzív, savanyú görögdinnye ízű energiaital, amely a népszerű Warheads cukorka jellegzetes, csípős-savanyú aromáját idézi, frissítő és energizáló élményt nyújtva.",
+      "Price": 7411.00,
+      "StockQuantity": "12,00"
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Bazooka Rattlerz Fruity Share Bag 100g",
+      "Description": "Változatos gyümölcsös ízek keveréke, intenzív és édes aromákkal.",
+      "Price": 1133.00,
+      "StockQuantity": "24,00"
+    },
+    {
+      "Category": "sour_gummies",
+      "Name": "Bazooka Rattlerz Sour Share Bag 120g",
+      "Description": "Csípős, savanyú ízek kavalkádja, amely bizsergető érzést kelt a nyelven.",
+      "Price": 1133.00,
+      "StockQuantity": "45,00"
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Bazooka Rattlerz Fruity Bag 40g",
+      "Description": "Kompakt kiszerelésű, élénk gyümölcsös ízekkel teli rágócukorka.",
+      "Price": 304.00,
+      "StockQuantity": "34,00"
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Bazooka Rattlerz Fruity Chewy Candies 120g",
+      "Description": "Puha, rágós textúrájú cukorkák gazdag, gyümölcsös ízvilággal.",
+      "Price": 1133.00,
+      "StockQuantity": "14,00"
+    },
+    {
+      "Category": "sour_gummies",
+      "Name": "Bazooka Rattlerz Sour Chewy Candies 120g",
+      "Description": "Savanyú, csípős ízű rágós cukorkák, amelyek intenzív ízélményt nyújtanak.",
+      "Price": 1133.00,
+      "StockQuantity": ""
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Bazooka Rattlerz Fruity 12x120g",
+      "Description": "Nagyobb kiszerelésű, változatos gyümölcsös ízeket tartalmazó csomag.",
+      "Price": 4100,
+      "StockQuantity": "12,00"
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Bazooka Rattlerz Fruity Chewy Candy 10x18g",
+      "Description": "Egyéni csomagolású, gyümölcsös ízű rágócukorkák praktikus kiszerelésben.",
+      "Price": 1200,
+      "StockQuantity": "21,00"
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Bazooka Juicy Drop Pop 26g",
+      "Description": "Kemény nyalóka ízletes gyümölcsös ízekben, kiegészítve egy külön tartályban lévő savanyú folyadékkal, amit rá lehet csepegtetni a nyalókára az intenzívebb ízélményért.",
+      "Price": 950.00,
+      "StockQuantity": "10,00"
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Bazooka Push Pop 15g",
+      "Description": "Nyomható nyalóka, amely lehetővé teszi, hogy élvezd az édes, gyümölcsös ízeket, majd elmentsd későbbre a praktikus tubusban.",
+      "Price": 490.00,
+      "StockQuantity": "41,00"
+    },
+    {
+      "Category": "sweet_gummies",
+      "Name": "Bazooka Ring Pop 15g",
+      "Description": "Gyűrű alakú nyalóka, amely intenzív gyümölcsös ízeket kínál, miközben játékos kiegészítőként is szolgál.",
+      "Price": 390.00,
+      "StockQuantity": "31,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Takis Nitro 113g",
+      "Description": "Intenzív habanero chili ízesítésű tekercs, fekete-piros csomagolásban, enyhén füstös aromával.",
+      "Price": 1990.00,
+      "StockQuantity": "30,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Takis Crunchy Fajita 92g",
+      "Description": "Taco fűszerezésre emlékeztető ízvilágú tekercs, köménymagos aromával és enyhe savanyú utóízzel.",
+      "Price": 2363.00,
+      "StockQuantity": "14,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Takis Dragon Sweet Chili 90g",
+      "Description": "Édes-csípős ízesítésű tekercs, amely a Sweet Chili Doritos rajongóinak is ízleni fog.",
+      "Price": 1990.00,
+      "StockQuantity": "12,00"
+    },
+    {
+      "Category": "salty_chips",
+      "Name": "Takis Intense Nacho 92g",
+      "Description": "Sajtos ízesítésű, nem csípős változat, amely a klasszikus nachos ízét idézi.",
+      "Price": 2190.00,
+      "StockQuantity": "32,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Takis Zombie 92g",
+      "Description": "Habanero és uborka ízesítésű tekercs, fekete-zöld csomagolásban.",
+      "Price": 1990.00,
+      "StockQuantity": "20,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Takis Waves Fuego 190g",
+      "Description": "Hullámos burgonyachips változat a klasszikus Fuego ízesítéssel.",
+      "Price": 1473.00,
+      "StockQuantity": "10,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Takis Hot Nuts Fuego 90g",
+      "Description": "Ropogós kukoricabevonattal ellátott földimogyoró, a Fuego ízesítéssel.",
+      "Price": 1490.00,
+      "StockQuantity": "17,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Takis Stix Fuego 280g",
+      "Description": "Vékony kukorica rudacskák a klasszikus Fuego ízesítéssel, intenzívebb chili és lime aromával.",
+      "Price": 1513.00,
+      "StockQuantity": "19,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Cheetos Crunchy Cheddar Jalapeño Chips 226g",
+      "Description": "Tökéletes egyensúly a sajtos és csípős ízek között, intenzív jalapeño aromával.",
+      "Price": 1990.00,
+      "StockQuantity": "26,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Cheetos Flamin' Hot Crunchy 226g",
+      "Description": "Ikonikus csípős íz, amely rendkívül népszerű a rajongók körében",
+      "Price": 3490.00,
+      "StockQuantity": "18,00"
+    },
+    {
+      "Category": "salty_chips",
+      "Name": "Cheetos Puffs 226g",
+      "Description": "Klasszikus sajtos íz könnyű, levegős textúrával, amely sokak gyerekkori kedvence.",
+      "Price": 3990.00,
+      "StockQuantity": "21,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Cheetos Flamin' Hot Puffs 226g",
+      "Description": "A népszerű csípős íz puffasztott változata, amely még intenzívebb ízélményt nyújt.",
+      "Price": 3490.00,
+      "StockQuantity": "5,00"
+    },
+    {
+      "Category": "salty_chips",
+      "Name": "Cheetos Popcorn Cheddar 17g",
+      "Description": "Sajtos ízesítésű pattogatott kukorica, amely ötvözi a Cheetos és a popcorn legjobb tulajdonságait.",
+      "Price": 3090.00,
+      "StockQuantity": "6,00"
+    },
+    {
+      "Category": "salty_chips",
+      "Name": "Cheetos Simply Puffs White Cheddar 70g",
+      "Description": "Fehér cheddar sajttal ízesített puffasztott kukoricasnack.",
+      "Price": 4090.00,
+      "StockQuantity": "5,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Cheetos Fantastix Chili Cheese 28g ",
+      "Description": "Vékony, pálcika alakú snack intenzív sajtízzel.",
+      "Price": 3250.00,
+      "StockQuantity": "13,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Cheetos Big Chipito Sweet Chilli flavour 100g",
+      "Description": "Nagyobb méretű, ropogós kukoricachips édes-csípős chili ízesítéssel.",
+      "Price": 990.00,
+      "StockQuantity": "22,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Cheetos Crunchetos Sweet Chili flavour 110g",
+      "Description": "Ropogós kukoricachips édes-csípős chili aromával, intenzív ízélményt nyújtva.",
+      "Price": 240.00,
+      "StockQuantity": "24,00"
+    },
+    {
+      "Category": "spicy_chips",
+      "Name": "Cheetos Crunchy Xxtra Flamin Hot' Cheese Flavored 240g",
+      "Description": "Még csípősebb változata a klasszikus Flamin' Hot íznek.",
+      "Price": 7380.00,
+      "StockQuantity": "4,00"
+    },
+    {
+      "Category": "salty_chips",
+      "Name": "Cheetos Beef and Onions Flavor 40g",
+      "Description": "Ropogós kukoricasnack intenzív marhahús és hagyma ízesítéssel, kisebb kiszerelésben.",
+      "Price": 2330.00,
+      "StockQuantity": "9,00"
+    },
+    {
+      "Category": "sour_gummies",
+      "Name": "Toxic Waste Yellow Drum Extreme Sour Candy 42g",
+      "Description": "Klasszikus sárga dobozos változat, amely öt ultra-savanyú ízt tartalmaz: alma, fekete cseresznye, görögdinnye, citrom és kék málna.",
+      "Price": 790.00,
+      "StockQuantity": "23,00"
+    },
+    {
+      "Category": "sour_gummies",
+      "Name": "Toxic Waste Green Drum Extreme Sour Candy 42g",
+      "Description": "Zöld dobozos változat, amely öt új savanyú ízt kínál: lime, kiwi, dinnye, zöldalma és zöld körte.",
+      "Price": 790.00,
+      "StockQuantity": "11,00"
+    },
+    {
+      "Category": "sour_gummies",
+      "Name": "Toxic Waste Red Drum Extreme Sour Candy 42g",
+      "Description": "Piros dobozos változat, amely öt további savanyú ízt tartalmaz: málna, áfonya, piros körte, eper és piros szőlő.",
+      "Price": 790.00,
+      "StockQuantity": "27,00"
+    },
+    {
+      "Category": "sour_gummies",
+      "Name": "Toxic Waste Purple Drum Extreme Sour Candy 42g",
+      "Description": "Lila dobozos változat, amely négy új savanyú ízt kínál: áfonya, szeder, fekete cseresznye és szőlő",
+      "Price": 790.00,
+      "StockQuantity": "32,00"
+    },
+    {
+      "Category": "sour_gummies",
+      "Name": "Toxic Waste Nuclear Sludge Chew Bar Sour Green Apple 20g",
+      "Description": "Savanyú zöldalma ízű rágható cukorka rúd formában.",
+      "Price": 199.00,
+      "StockQuantity": "20,00"
+    },
+    {
+      "Category": "sour_gummies",
+      "Name": "Toxic Waste Blue Raspberry Flavored Chewy Candy 20g",
+      "Description": "Intenzív kék málna ízű, savanyú rágós cukorka, amely a Toxic Waste márka jellegzetes erős, savanyú ízélményét nyújtja.",
+      "Price": 199.00,
+      "StockQuantity": "14,00"
+    }
+  ]
+}

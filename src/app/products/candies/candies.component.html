@@ -1,0 +1,78 @@
+<!-- <p>candies works!</p>
+{{ candies | json }} -->
+
+<!-- searchText: {{searchText}} -->
+
+<div class="rendezes-gombok">
+  <button (click)="sortProducts('low-to-high')">
+    <i class="bi bi-arrow-down"></i> Legolcsóbbak
+  </button>
+
+  <button (click)="sortProducts('high-to-low')">
+    <i class="bi bi-arrow-up"></i> Legdrágábbak
+  </button>
+</div>
+
+<div class="edes-gumicukrok-lista">
+  <ng-container *ngFor="let candy of (candies|search:searchText)|sort:order">
+    <div class="edes-gumicukrok-item">
+      <div class="edes-gumicukrok-card">
+        <h3>{{ candy.name }}</h3>
+        <img [src]="candy.picture" [alt]="candy.name" class="edes-gumicukrok-kep"> 
+
+        <p class="leiras"> {{ candy.description }} </p>
+        <p class="ar">Ár: {{ candy.price }} Ft</p>
+        <div class="mennyiseg">
+          Mennyiség: <input type="number" #inputQuantity min="1" value="1">
+        </div>
+        <button class="kosar-gomb" (click)="kosarbaRak(candy, inputQuantity.value)">
+          Kosárba rakom
+        </button>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+<div *ngIf="showNotification" class="notification">
+  A termék kosárba rakva!
+</div>
+
+<button class="scroll-to-top" (click)="scrollToTop()">↑</button>
+
+
+
+
+
+
+<!-- <div class="rendezes-gombok">
+    <button (click)="sortProducts('low-to-high')">
+      <i class="bi bi-arrow-down"></i> Legolcsóbbak
+    </button>
+    
+    <button (click)="sortProducts('high-to-low')">
+      <i class="bi bi-arrow-up"></i> Legdrágábbak
+    </button>
+  </div>
+  
+  <div class="edes-gumicukrok-lista">
+    <div *ngFor="let candy of candies; let i = index" class="edes-gumicukrok-item">
+      <div class="edes-gumicukrok-card">
+        <h3>{{ candy.name }}</h3>
+        <img [src]="candy.image" [alt]="candy.name" class="edes-gumicukrok-kep">
+        <p class="leiras"> {{ candy.description }} </p>
+        <p class="ar">Ár: {{ candy.price }} Ft</p>
+        <div class="mennyiseg">
+          Mennyiség: <input type="number" [(ngModel)]="candy.darab" min="1">
+        </div>
+        <button class="kosar-gomb" (click)="kosarbaRak(i)">
+          Kosárba rakom
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngIf="showNotification" class="notification">
+    A termék kosárba rakva!
+  </div>
+  
+  <button class="scroll-to-top" (click)="scrollToTop()">↑</button> -->
