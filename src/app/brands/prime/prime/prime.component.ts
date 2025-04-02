@@ -12,9 +12,10 @@ interface prime {
 }
 
 @Component({
-  selector: 'app-prime',
-  templateUrl: './prime.component.html',
-  styleUrls: ['./prime.component.css']
+    selector: 'app-prime',
+    templateUrl: './prime.component.html',
+    styleUrls: ['./prime.component.css'],
+    standalone: false
 })
 export class primeComponent {
   prime: prime[] = [

@@ -12,9 +12,10 @@ interface takis {
 }
 
 @Component({
-  selector: 'app-takis',
-  templateUrl: './takis.component.html',
-  styleUrls: ['./takis.component.css']
+    selector: 'app-takis',
+    templateUrl: './takis.component.html',
+    styleUrls: ['./takis.component.css'],
+    standalone: false
 })
 export class takisComponent {
   takis: takis[] = [

@@ -12,9 +12,10 @@ interface Arizona {
 }
 
 @Component({
-  selector: 'app-arizona',
-  templateUrl: './arizona.component.html',
-  styleUrls: ['./arizona.component.css']
+    selector: 'app-arizona',
+    templateUrl: './arizona.component.html',
+    styleUrls: ['./arizona.component.css'],
+    standalone: false
 })
 export class ArizonaComponent {
   arizona: Arizona[] = [

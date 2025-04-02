@@ -4,26 +4,23 @@ import productRoutes from "./routes/products";
 import cartRoutes from "./routes/carts";
 import authRoutes from "./routes/auth";
 import orderRoutes from "./routes/orders";
-import adminRoutes from "./routes/admin";  // Admin útvonal
+import adminRoutes from "./routes/admin"; 
 
 const app = express();
 
-// CORS beállítások
 const corsOptions = {
-  origin: "http://localhost:4200",  // A frontend portja, amit engedélyezünk
-  methods: ['GET', 'POST', 'PATCH', 'DELETE'],  // Az engedélyezett HTTP metódusok
-  allowedHeaders: ['Content-Type', 'Authorization'],  // Az engedélyezett header-ek
+  origin: "http://localhost:4200", 
+  methods: ['GET', 'POST', 'PATCH', 'DELETE'], 
+  allowedHeaders: ['Content-Type', 'Authorization'], 
 };
 
-// Middleware beállítások
-app.use(cors(corsOptions));  // Alkalmazza a CORS beállítást
+app.use(cors(corsOptions));  
 app.use(express.json());
 
-// API végpontok
 app.use("/api/products", productRoutes);
 app.use("/api/carts", cartRoutes);
 app.use("/api/auth", authRoutes);
-app.use("/api/orders", orderRoutes);  // Az autentikációs middleware már itt is működik
-app.use("/api/admin", adminRoutes);  // Admin útvonal beállítása
+app.use("/api/orders", orderRoutes);  
+app.use("/api/admin", adminRoutes);  
 
 export default app;

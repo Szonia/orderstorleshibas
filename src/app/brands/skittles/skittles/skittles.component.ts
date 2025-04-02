@@ -12,9 +12,10 @@ interface skittles {
 }
 
 @Component({
-  selector: 'app-skittles',
-  templateUrl: './skittles.component.html',
-  styleUrls: ['./skittles.component.css']
+    selector: 'app-skittles',
+    templateUrl: './skittles.component.html',
+    styleUrls: ['./skittles.component.css'],
+    standalone: false
 })
 export class skittlesComponent {
   skittles: skittles[] = [

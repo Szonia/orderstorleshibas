@@ -5,9 +5,10 @@ import { AuthService } from '../../services/auth/auth.service';
 import { Router } from '@angular/router';  // Router importálása
 
 @Component({
-  selector: 'app-checkout',
-  templateUrl: './checkout.component.html',
-  styleUrls: ['./checkout.component.css'],
+    selector: 'app-checkout',
+    templateUrl: './checkout.component.html',
+    styleUrls: ['./checkout.component.css'],
+    standalone: false
 })
 export class CheckoutComponent implements OnInit {
   order = {

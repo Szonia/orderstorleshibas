@@ -3,9 +3,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-kosar',
-  templateUrl: './kosar.component.html',
-  styleUrls: ['./kosar.component.css']
+    selector: 'app-kosar',
+    templateUrl: './kosar.component.html',
+    styleUrls: ['./kosar.component.css'],
+    standalone: false
 })
 export class KosarComponent implements OnInit {
   cartItems: any[] = [];

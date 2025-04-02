@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { CartService } from '../services/cart/cart.service';
 
 @Component({
-  selector: 'app-orders-list',
-  templateUrl: './orders-list.component.html',
-  styleUrls: ['./orders-list.component.css']
+    selector: 'app-orders-list',
+    templateUrl: './orders-list.component.html',
+    styleUrls: ['./orders-list.component.css'],
+    standalone: false
 })
 export class OrdersListComponent {
   orders: any[] = [];

@@ -4,9 +4,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-csipos-chipsek',
-  templateUrl: './csipos-chipsek.component.html',
-  styleUrls: ['./csipos-chipsek.component.css'],
+    selector: 'app-csipos-chipsek',
+    templateUrl: './csipos-chipsek.component.html',
+    styleUrls: ['./csipos-chipsek.component.css'],
+    standalone: false
 })
 
 export class CsiposChipsekComponent {

@@ -22,8 +22,6 @@ import { FiokomComponent } from './account/fiokom/fiokom.component';
 import { KapcsolatComponent } from './contact-us/kapcsolat/kapcsolat.component';
 import { KivansaglistamComponent } from './wishlist/kivansaglistam/kivansaglistam.component';
 import { KosarComponent } from './cart/kosar/kosar.component';
-import { LoginComponent } from './account/login/login.component';
-import { RegistrationComponent } from './account/registration/registration.component';
 import { fantaComponent } from './brands/fanta/fanta/fanta.component';
 import { ArizonaComponent } from './brands/arizona/arizona/arizona.component';
 import { bazookaComponent } from './brands/bazooka/bazooka/bazooka.component';
@@ -50,8 +48,10 @@ import { OrdersListComponent } from './orders-list/orders-list.component';
 import { SearchPipe } from './search.pipe';
 import { SortPipe } from './sort.pipe';
 
-// Helyes import az AuthService számára
 import { AuthService } from './services/auth/auth.service';
+
+import { LoginComponent } from './account/login/login.component';
+import { RegistrationComponent } from './account/registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -72,8 +72,6 @@ import { AuthService } from './services/auth/auth.service';
     UditokComponent,
     EdesUditokComponent,
     SavanyuUditokComponent,
-    RegistrationComponent,
-    LoginComponent,
     fantaComponent,
     ArizonaComponent,
     bazookaComponent,
@@ -98,14 +96,16 @@ import { AuthService } from './services/auth/auth.service';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule, // Importálva a ReactiveFormsModule
+    ReactiveFormsModule, 
     RouterModule,
     FormsModule,
     AngularFireModule.initializeApp(environments.firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    LoginComponent,
+    RegistrationComponent
   ],
-  providers: [AuthService, provideHttpClient()], // AuthService hozzáadva a providers szekcióhoz
+  providers: [AuthService, provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -12,9 +12,10 @@ interface cheetos {
 }
 
 @Component({
-  selector: 'app-cheetos',
-  templateUrl: './cheetos.component.html',
-  styleUrls: ['./cheetos.component.css']
+    selector: 'app-cheetos',
+    templateUrl: './cheetos.component.html',
+    styleUrls: ['./cheetos.component.css'],
+    standalone: false
 })
 export class cheetosComponent {
   cheetos: cheetos[] = [

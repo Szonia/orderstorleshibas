@@ -6,9 +6,10 @@ interface Termek {
 }
 
 @Component({
-  selector: 'app-kivansaglistam',
-  templateUrl: './kivansaglistam.component.html',
-  styleUrls: ['./kivansaglistam.component.css']
+    selector: 'app-kivansaglistam',
+    templateUrl: './kivansaglistam.component.html',
+    styleUrls: ['./kivansaglistam.component.css'],
+    standalone: false
 })
 export class KivansaglistamComponent {
   termekek: Termek[] = [];  

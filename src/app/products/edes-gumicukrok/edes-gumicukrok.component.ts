@@ -4,9 +4,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-edes-gumicukrok',
-  templateUrl: './edes-gumicukrok.component.html',
-  styleUrls: ['./edes-gumicukrok.component.css'],
+    selector: 'app-edes-gumicukrok',
+    templateUrl: './edes-gumicukrok.component.html',
+    styleUrls: ['./edes-gumicukrok.component.css'],
+    standalone: false
 })
 
 export class EdesGumicukrokComponent {

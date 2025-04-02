@@ -3,9 +3,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { SearchService } from '../../search.service';
 
 @Component({
-  selector: 'app-candies',
-  templateUrl: './candies.component.html',
-  styleUrls: ['./candies.component.css']
+    selector: 'app-candies',
+    templateUrl: './candies.component.html',
+    styleUrls: ['./candies.component.css'],
+    standalone: false
 })
 export class CandiesComponent {
 

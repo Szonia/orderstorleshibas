@@ -1,10 +1,10 @@
 import express from "express";
-import { register, login, resetPassword } from "../controllers/authController"; // 🔹 Importálás helyesen!
+import { register, login, resetPassword } from "../controllers/authController";
 
 const router = express.Router();
 
 router.post("/register", register);
 router.post("/login", login);
-router.post("/reset-password", resetPassword); // 🔹 Új jelszó visszaállítási útvonal
+router.post("/reset-password", resetPassword); 
 
 export default router;

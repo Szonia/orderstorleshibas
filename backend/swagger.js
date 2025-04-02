@@ -1,7 +1,6 @@
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
 
-// Swagger opciók konfigurálása
 const swaggerOptions = {
   swaggerDefinition: {
     info: {
@@ -13,14 +12,13 @@ const swaggerOptions = {
       },
       version: "1.0.0",
     },
-    basePath: "/api", // Base path for your API endpoints
+    basePath: "/api", 
   },
-  apis: ["./src/routes/*.ts", "./src/controllers/*.ts"], // Az API végpontokat tartalmazó fájlok elérési útja
+  apis: ["./src/routes/*.ts", "./src/controllers/*.ts"], 
 };
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
 
-// Swagger dokumentáció hozzáadása az Express alkalmazáshoz
 export const swaggerDocs = (app) => {
   app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 };

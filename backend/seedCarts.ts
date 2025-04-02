@@ -1,7 +1,7 @@
-import { db } from "./src/firebase"; // Firebase kapcsolat importálása
+import { db } from "./src/firebase"; 
 
 const seedCarts = async () => {
-  const cartsRef = db.ref("carts"); // Hivatkozás a "carts" csomópontra
+  const cartsRef = db.ref("carts"); 
 
   const sampleCarts = {
     user123: {

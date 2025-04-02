@@ -12,9 +12,10 @@ interface sour {
 }
 
 @Component({
-  selector: 'app-sour',
-  templateUrl: './sour.component.html',
-  styleUrls: ['./sour.component.css']
+    selector: 'app-sour',
+    templateUrl: './sour.component.html',
+    styleUrls: ['./sour.component.css'],
+    standalone: false
 })
 export class sourComponent {
   sour: sour[] = [

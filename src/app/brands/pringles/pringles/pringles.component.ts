@@ -12,9 +12,10 @@ interface pringles {
 }
 
 @Component({
-  selector: 'app-pringles',
-  templateUrl: './pringles.component.html',
-  styleUrls: ['./pringles.component.css']
+    selector: 'app-pringles',
+    templateUrl: './pringles.component.html',
+    styleUrls: ['./pringles.component.css'],
+    standalone: false
 })
 export class pringlesComponent {
   pringles: pringles[] = [

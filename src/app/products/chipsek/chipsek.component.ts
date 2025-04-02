@@ -4,9 +4,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-chipsek',
-  templateUrl: './chipsek.component.html',
-  styleUrls: ['./chipsek.component.css'],
+    selector: 'app-chipsek',
+    templateUrl: './chipsek.component.html',
+    styleUrls: ['./chipsek.component.css'],
+    standalone: false
 })
 
 export class ChipsekComponent {

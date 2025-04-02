@@ -12,9 +12,10 @@ interface nerds {
 }
 
 @Component({
-  selector: 'app-nerds',
-  templateUrl: './nerds.component.html',
-  styleUrls: ['./nerds.component.css']
+    selector: 'app-nerds',
+    templateUrl: './nerds.component.html',
+    styleUrls: ['./nerds.component.css'],
+    standalone: false
 })
 export class nerdsComponent {
   nerds: nerds[] = [

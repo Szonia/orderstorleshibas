@@ -12,9 +12,10 @@ interface warheads {
 }
 
 @Component({
-  selector: 'app-warheads',
-  templateUrl: './warheads.component.html',
-  styleUrls: ['./warheads.component.css']
+    selector: 'app-warheads',
+    templateUrl: './warheads.component.html',
+    styleUrls: ['./warheads.component.css'],
+    standalone: false
 })
 export class warheadsComponent {
   warheads: warheads[] = [

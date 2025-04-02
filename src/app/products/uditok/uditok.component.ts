@@ -4,9 +4,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-uditok',
-  templateUrl: './uditok.component.html',
-  styleUrls: ['./uditok.component.css'],
+    selector: 'app-uditok',
+    templateUrl: './uditok.component.html',
+    styleUrls: ['./uditok.component.css'],
+    standalone: false
 })
 
 export class UditokComponent {

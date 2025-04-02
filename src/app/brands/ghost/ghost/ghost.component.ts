@@ -12,9 +12,10 @@ interface ghost {
 }
 
 @Component({
-  selector: 'app-ghost',
-  templateUrl: './ghost.component.html',
-  styleUrls: ['./ghost.component.css']
+    selector: 'app-ghost',
+    templateUrl: './ghost.component.html',
+    styleUrls: ['./ghost.component.css'],
+    standalone: false
 })
 export class ghostComponent {
   ghost: ghost[] = [

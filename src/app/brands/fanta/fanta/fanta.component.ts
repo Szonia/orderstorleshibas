@@ -12,9 +12,10 @@ interface fanta {
 }
 
 @Component({
-  selector: 'app-fanta',
-  templateUrl: './fanta.component.html',
-  styleUrls: ['./fanta.component.css']
+    selector: 'app-fanta',
+    templateUrl: './fanta.component.html',
+    styleUrls: ['./fanta.component.css'],
+    standalone: false
 })
 export class fantaComponent {
   fanta: fanta[] = [

@@ -4,9 +4,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-savanyu-uditok',
-  templateUrl: './savanyu-uditok.component.html',
-  styleUrls: ['./savanyu-uditok.component.css'],
+    selector: 'app-savanyu-uditok',
+    templateUrl: './savanyu-uditok.component.html',
+    styleUrls: ['./savanyu-uditok.component.css'],
+    standalone: false
 })
 
 export class SavanyuUditokComponent {

@@ -39,7 +39,6 @@ import { ProductlistComponent } from './productlist/productlist.component';
 
 const routes: Routes = [
 
-  // { path: '', redirectTo: '/fooldal', pathMatch: 'full' },
   { path: '', component:CandyListComponent },
 
 
@@ -83,7 +82,6 @@ const routes: Routes = [
   
   {path: 'adminlogin', component: AdminloginComponent },
   {path: 'adminproducts', component: ProductlistComponent },
-  // { path: '**', redirectTo: '', pathMatch: 'full' }
 
 ];
 

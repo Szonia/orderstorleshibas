@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-fiokom',
-  templateUrl: './fiokom.component.html',
-  styleUrls: ['./fiokom.component.css']
+    selector: 'app-fiokom',
+    templateUrl: './fiokom.component.html',
+    styleUrls: ['./fiokom.component.css'],
+    standalone: false
 })
 export class FiokomComponent implements OnInit {
   userEmail: string = ''; 

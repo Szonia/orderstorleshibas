@@ -22,6 +22,6 @@ export interface Order {
   id: string;
   userId: string;
   items: CartItem[];
-  createdAt: Date;  // Ha biztos vagy benne, hogy Date objektumot használsz
+  createdAt: Date; 
   status: string;
 }

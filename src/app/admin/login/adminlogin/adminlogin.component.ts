@@ -3,9 +3,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-adminlogin',
-  templateUrl: './adminlogin.component.html',
-  styleUrls: ['./adminlogin.component.css']
+    selector: 'app-adminlogin',
+    templateUrl: './adminlogin.component.html',
+    styleUrls: ['./adminlogin.component.css'],
+    standalone: false
 })
 export class AdminloginComponent implements OnInit {
   loginForm!: FormGroup;

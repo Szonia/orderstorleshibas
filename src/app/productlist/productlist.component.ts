@@ -4,9 +4,10 @@ import { ProductlistService } from '../productlist.service';
 import { CartService } from '../cart.service';
 
 @Component({
-  selector: 'app-productlist',
-  templateUrl: './productlist.component.html',
-  styleUrls: ['./productlist.component.css']
+    selector: 'app-productlist',
+    templateUrl: './productlist.component.html',
+    styleUrls: ['./productlist.component.css'],
+    standalone: false
 })
 export class ProductlistComponent {
   products: any[] = [];

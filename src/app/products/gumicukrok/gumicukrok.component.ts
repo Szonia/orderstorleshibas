@@ -4,9 +4,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-gumicukrok',
-  templateUrl: './gumicukrok.component.html',
-  styleUrls: ['./gumicukrok.component.css'],
+    selector: 'app-gumicukrok',
+    templateUrl: './gumicukrok.component.html',
+    styleUrls: ['./gumicukrok.component.css'],
+    standalone: false
 })
 
 export class GumicukrokComponent {

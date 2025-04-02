@@ -4,9 +4,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-savanyu-gumicukrok',
-  templateUrl: './savanyu-gumicukrok.component.html',
-  styleUrls: ['./savanyu-gumicukrok.component.css'],
+    selector: 'app-savanyu-gumicukrok',
+    templateUrl: './savanyu-gumicukrok.component.html',
+    styleUrls: ['./savanyu-gumicukrok.component.css'],
+    standalone: false
 })
 
 export class SavanyuGumicukrokComponent {

@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-fooldal',
-  templateUrl: './fooldal.component.html',
-  styleUrls: ['./fooldal.component.css']
+    selector: 'app-fooldal',
+    templateUrl: './fooldal.component.html',
+    styleUrls: ['./fooldal.component.css'],
+    standalone: false
 })
 export class FooldalComponent {
   products = [

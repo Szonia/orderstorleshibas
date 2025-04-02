@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-candy-list',
-  templateUrl: './candy-list.component.html',
-  styleUrl: './candy-list.component.css'
+    selector: 'app-candy-list',
+    templateUrl: './candy-list.component.html',
+    styleUrl: './candy-list.component.css',
+    standalone: false
 })
 export class CandyListComponent {
   candies:any

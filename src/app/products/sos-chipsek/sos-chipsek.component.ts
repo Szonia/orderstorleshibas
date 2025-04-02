@@ -4,9 +4,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-sos-chipsek',
-  templateUrl: './sos-chipsek.component.html',
-  styleUrls: ['./sos-chipsek.component.css'],
+    selector: 'app-sos-chipsek',
+    templateUrl: './sos-chipsek.component.html',
+    styleUrls: ['./sos-chipsek.component.css'],
+    standalone: false
 })
 
 export class SosChipsekComponent {

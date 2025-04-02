@@ -4,9 +4,10 @@ import { CartService } from '../../services/cart/cart.service';
 import { ProductlistService } from '../../productlist.service';
 
 @Component({
-  selector: 'app-edes-uditok',
-  templateUrl: './edes-uditok.component.html',
-  styleUrls: ['./edes-uditok.component.css'],
+    selector: 'app-edes-uditok',
+    templateUrl: './edes-uditok.component.html',
+    styleUrls: ['./edes-uditok.component.css'],
+    standalone: false
 })
 
 export class EdesUditokComponent {

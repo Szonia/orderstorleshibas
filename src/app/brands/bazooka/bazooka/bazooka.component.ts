@@ -12,9 +12,10 @@ interface bazooka {
 }
 
 @Component({
-  selector: 'app-bazooka',
-  templateUrl: './bazooka.component.html',
-  styleUrls: ['./bazooka.component.css']
+    selector: 'app-bazooka',
+    templateUrl: './bazooka.component.html',
+    styleUrls: ['./bazooka.component.css'],
+    standalone: false
 })
 export class bazookaComponent {
   bazooka: bazooka[] = [

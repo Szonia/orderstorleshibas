@@ -3,15 +3,14 @@ import fs from "fs";
 
 import path from "path";
 
-// 🔹 Load and parse the service account key
 const serviceAccountPath = path.resolve(__dirname, 'serviceAccountKey.json');
 let serviceAccount;
 try {
   serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, "utf8"));
-  console.log(serviceAccount);  // Log to verify
+  console.log(serviceAccount); 
 } catch (error) {
   console.error('Error reading or parsing the service account key:', error);
-  process.exit(1);  // Exit if the file is not found or cannot be parsed
+  process.exit(1);  
 }
 
 if (!admin.apps.length) {
@@ -22,8 +21,8 @@ if (!admin.apps.length) {
 }
 
 
-const db = admin.database(); // 🔹 Realtime Database referencia
-const firestore = admin.firestore(); // 🔹 Firestore referencia
-const auth = admin.auth(); // 🔹 Firebase Authentication referencia
+const db = admin.database();
+const firestore = admin.firestore(); 
+const auth = admin.auth();
 
-export { db, firestore, auth }; // Az auth exportálása
+export { db, firestore, auth };
