@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 import { ProductlistService } from '../../productlist.service';
 
